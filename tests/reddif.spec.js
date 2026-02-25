@@ -7,10 +7,10 @@ test('Redif Register', async ({ page }) => {
 
 })
 
-test("Verify add task", async ({page}) =>{
+test("Verify add task", async ({ page }) => {
 
     await page.goto('http://localhost:3000/')
-}) 
+})
 
 
 // test('Login with Valid credentials', async ({ page }) => {
