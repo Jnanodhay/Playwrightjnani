@@ -9,7 +9,11 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@faker-js/faker": "^10.3.0",
     "@playwright/test": "^1.58.1",
     "@types/node": "^25.2.0"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   }
 }
