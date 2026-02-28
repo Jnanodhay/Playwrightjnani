@@ -16,4 +16,7 @@ test('Verify Admin can add job title', async ({ page }) => {
   await page.getByText('Job', { exact: true }).click();
   await page.getByRole('menuitem', { name: 'Job Titles' }).click();
   await page.getByRole('button', { name: ' Add' }).click();
+  await page.getByRole ('textbox').nth(1).fill(faker.person.jobTitle());
+  await page.waitForTimeout(50000)
+
 });
