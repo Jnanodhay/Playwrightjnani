@@ -45,7 +45,7 @@ for (let status in emstatuses) {
       'https://opensource-demo.orangehrmlive.com/web/index.php/admin/employmentStatus'
     );
   });
-// }
+ }
 
 //   await page.getByRole('textbox').nth(1).click();
 //   await page.getByRole('textbox').nth(1).fill('Mango');
