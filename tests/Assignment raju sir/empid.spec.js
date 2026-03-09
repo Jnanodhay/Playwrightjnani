@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import logindata from '../../testdata/loginData';
+import data from '../../testdata/login.json';
 import { loginPage } from '../../Pages/empid.po';
 import { employeePage } from '../../Pages/logout.po';
 import { faker } from '@faker-js/faker';
