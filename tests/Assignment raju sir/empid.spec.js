@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import logindata from '../../testdata/loginData';
 import { loginPage } from '../../Pages/empid.po';
 import { employeePage } from '../../Pages/logout.po';
-import { faker } from '@faker-js/faker'
+import { faker } from '@faker-js/faker';
 import path from 'path';
 
 let loginlogoutPage;
