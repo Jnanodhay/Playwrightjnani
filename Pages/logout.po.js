@@ -38,6 +38,6 @@ export class loginPage {
   }
 
   async verifyLogout(){
-    await expect(this.page).toHaveURL(/\/auth\/login/);
+    await expect(this.page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/auth/dashboard/index');
   }
 }

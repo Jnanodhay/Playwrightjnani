@@ -10,7 +10,7 @@ test.describe("verify login", () => {
 
         await login.launchUrl()
         await login.verifyLogo()
-        await login.loginwithCreds(process.env.APP_USERNAM,process.env.APP_PASSWORD)
+        await login.loginwithCreds(process.env.APP_USERNAME, process.env.APP_PASSWORD)
         await login.loginSuccess()
 
     })

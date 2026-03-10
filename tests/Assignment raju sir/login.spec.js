@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import logindata from '../../Testdata/loginData.json' ;
+import data from '../../testdata/login.json' ;
 import { loginPage } from '../../Pages/logout.po.js';
 
 let loginlogoutPage;

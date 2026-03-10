@@ -1,6 +1,5 @@
 import { expect } from "@playwright/test"
 
-import data from "../testdata/login.json"
 
 
 export class loginpage {
@@ -9,7 +8,8 @@ export class loginpage {
 
         this.page = page
         this.logo = page.locator('//img[@alt="company-branding"]')
-        this.usernameinput = page.locator('//input[@name="username"]')
+        // this.usernameInput = page.locator('textbox', { name: 'Username' })
+        this.usernameInput = page.locator('//input[@name="username"]')
         this.passwordInput = page.getByPlaceholder('Password')
         this.loginBtn = page.locator('button[type="submit"]')
         this.loginErrorMessage = page.locator("//p[text()='Invalid credentials']")
@@ -18,7 +18,7 @@ export class loginpage {
 
     async launchUrl() {
 
-        await this.page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+        await this.page.goto('/web/index.php/auth/login')
 
     }
 
@@ -38,7 +38,7 @@ export class loginpage {
 
     async loginSuccess() {
 
-        await expect(this.page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/auth/dashboard/index')
+        await expect(this.page).toHaveURL('/web/index.php/auth/dashboard/index')
 
     }
 
