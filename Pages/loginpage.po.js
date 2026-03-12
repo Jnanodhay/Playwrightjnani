@@ -34,13 +34,18 @@ export class loginpage {
         await this.passwordInput.fill(password)
         await this.loginBtn.click()
 
+
     }
+
+    // async loginSuccess() {
+
+    //     await expect(this.page).toHaveURL('/web/index.php/auth/dashboard/index')
+
+    // }
 
     async loginSuccess() {
-
-        await expect(this.page).toHaveURL('/web/index.php/auth/dashboard/index')
-
-    }
+    await expect(this.page).toHaveURL('/web/index.php/dashboard/index')
+}
 
     async loginfailure() {
 

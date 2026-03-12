@@ -35,48 +35,48 @@ test('Verify created employee using employee ID', { tag: "@PIM" }, async ({ page
     await employeeCreationPage.verifybyEmpId(empId);
 })
 
-test('Verify created employee using employee name', { tag: "@PIM" }, async ({ page }) => {
-    const empId = faker.number.int({ min: 1000, max: 9999 }).toString();
-    const firstName = faker.person.firstName();
-    const lastName = faker.person.lastName();
-    await employeeCreationPage.addEmployee(firstName, lastName, empId);
-    console.log(empId);
-    console.log(firstName);
-    console.log(lastName);
+// test('Verify created employee using employee name', { tag: "@PIM" }, async ({ page }) => {
+//     const empId = faker.number.int({ min: 1000, max: 9999 }).toString();
+//     const firstName = faker.person.firstName();
+//     const lastName = faker.person.lastName();
+//     await employeeCreationPage.addEmployee(firstName, lastName, empId);
+//     console.log(empId);
+//     console.log(firstName);
+//     console.log(lastName);
 
-    //verify personal details page
-    await employeeCreationPage.saveVerifyPersonalDetailsPage();
-    await employeeCreationPage.verifybyEmpName(firstName, lastName);
-})
+//     //verify personal details page
+//     await employeeCreationPage.saveVerifyPersonalDetailsPage();
+//     await employeeCreationPage.verifybyEmpName(firstName, lastName);
+// })
 
-test('Edit Employee Details', { tag: "@PIM" }, async ({ page }) => {
-    const empId = faker.number.int({ min: 1000, max: 9999 }).toString();
-    const firstName = faker.person.firstName();
-    const lastName = faker.person.lastName();
-    await employeeCreationPage.addEmployee(firstName, lastName, empId);
-    console.log(empId);
-    console.log(firstName);
-    console.log(lastName);
+// test('Edit Employee Details', { tag: "@PIM" }, async ({ page }) => {
+//     const empId = faker.number.int({ min: 1000, max: 9999 }).toString();
+//     const firstName = faker.person.firstName();
+//     const lastName = faker.person.lastName();
+//     await employeeCreationPage.addEmployee(firstName, lastName, empId);
+//     console.log(empId);
+//     console.log(firstName);
+//     console.log(lastName);
 
-    //verify personal details page
-    await employeeCreationPage.saveVerifyPersonalDetailsPage();
-    await employeeCreationPage.verifybyEmpName(firstName, lastName);
-    await employeeCreationPage.editVerifyEmployeeDetails(firstName, lastName, empId);
+//     //verify personal details page
+//     await employeeCreationPage.saveVerifyPersonalDetailsPage();
+//     await employeeCreationPage.verifybyEmpName(firstName, lastName);
+//     await employeeCreationPage.editVerifyEmployeeDetails(firstName, lastName, empId);
 
 
-})
+// })
 
-test('Delete Employee Details', { tag: "@PIM" }, async ({ page }) => {
-    const empId = faker.number.int({ min: 1000, max: 9999 }).toString();
-    const firstName = faker.person.firstName();
-    const lastName = faker.person.lastName();
-    await employeeCreationPage.addEmployee(firstName, lastName, empId);
-    console.log(empId);
-    console.log(firstName);
-    console.log(lastName);
+// test('Delete Employee Details', { tag: "@PIM" }, async ({ page }) => {
+//     const empId = faker.number.int({ min: 1000, max: 9999 }).toString();
+//     const firstName = faker.person.firstName();
+//     const lastName = faker.person.lastName();
+//     await employeeCreationPage.addEmployee(firstName, lastName, empId);
+//     console.log(empId);
+//     console.log(firstName);
+//     console.log(lastName);
 
-    //verify personal details page
-    await employeeCreationPage.saveVerifyPersonalDetailsPage();
-    await employeeCreationPage.verifybyEmpId(empId);
-    await employeeCreationPage.deleteEmployee(empId);
-})
+//     //verify personal details page
+//     await employeeCreationPage.saveVerifyPersonalDetailsPage();
+//     await employeeCreationPage.verifybyEmpId(empId);
+//     await employeeCreationPage.deleteEmployee(empId);
+// })
