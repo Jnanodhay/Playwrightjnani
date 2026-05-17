@@ -13,7 +13,7 @@ export class loginpage {
         this.passwordInput = page.getByPlaceholder('Password')
         this.loginBtn = page.locator('button[type="submit"]')
         this.loginErrorMessage = page.locator("//p[text()='Invalid credentials']")
-
+        //p[contains(@class,'jnanodhaya')]
     }
 
     async launchUrl() {
